@@ -1,0 +1,278 @@
+:root{
+    --dark: #1C1C1C;
+    --accent-color: #F13939;
+    --light: #B5B0CA;
+    --white: #FFFFFF;
+    --tr: 0.2s;
+}
+
+.container{
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.container._line{
+    border: 1px solid var(--light);
+}
+
+.page{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+.dark{
+    color: var(--white);
+    background-color: var(--dark);
+}
+
+.dark > header{
+    border-bottom: 1px solid var(--light);
+}
+
+.title-h1{
+    font-size: 67px;
+    line-height: normal;
+}
+
+.title-h2{
+    font-size: 62px;
+    line-height: normal;
+}
+
+.title-h3{
+    font-size: 58px;
+    line-height: normal;
+}
+
+.text{
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+a{
+    text-decoration: none;
+    transition: var(--tr);
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    font-size: 20px;
+    font-weight: 500px;
+}
+
+.nav__link{
+    color: var(--white);
+}
+
+.nav__link:hove{
+    color: var(--accent-color);
+}
+
+.btn{
+    padding: 16px 40px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.btn-light{
+    background-color: var(--light);
+    border: 1px solid var(--light);
+    color: #1C1C1C;
+}
+
+.btn-accent{
+    background-color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    color: var(--white);
+}
+
+.btn-line{
+    color: var(--dark);
+    border: 1px solid var(--light);
+}
+
+.btn._ml{
+    margin-left: 16px;
+}
+
+.btn._min{
+    font-size: 16px;
+    padding: 16px 40px;
+}
+
+.lol{
+    width: 70%;
+}
+
+.lolo{
+    width: 80%;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.main__desc{
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+.main__title{
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.free{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 120px 60px;
+}
+
+.free__title{
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+.free__desc{
+    max-width: 500px;
+    margin-bottom: 60px;
+}
+
+.price{
+    border-top: 1px solid var(--light);
+    border-bottom: 1px solid var(--light);
+    margin-bottom: 100px;
+}
+
+.price__title{
+    margin: 0 auto 24px;
+    max-width: 600px;
+    text-align: center;
+}
+.free__cover{
+    padding-left: 20px;
+}
+
+.price__desc{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.price-box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+}
+
+.price-box__col{
+    padding: 60px 46px 76px 46px;
+    box-sizing: border-box;
+}
+
+.price-box__free{
+    border: 1px solid var(--light);
+
+}
+
+.price-box__paid{
+    color: var(--white);
+    border: 1px solid var(--dark);
+    background-color: var(--dark);
+
+}
+
+.tt{
+    border-radius: 30px;
+}
+
+.price-box__title{
+    margin-top: 0;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.price-box__cost{
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 0;
+}
+
+.price-box__paid .price-box__cost{
+    color: var(--accent-color);
+}
+    
+
+.price-box__list{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+
+.price-box__item{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+    margin-bottom: 33px;
+}
+
+.price-box__item:before{
+    content: '';
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url(/img/free-icon-paws-4225928.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.price-box__paid .price-box__item:before{
+    background-image: url(/img/free-icon-paws-4225925.png);
+}
+
+.consultation{
+    text-align: center;
+}
+
+.consultation__title{
+    margin-top: 0;
+}
+
+.consultation__desc{
+    max-width: 820px;
+    margin: 0 auto;
+}
+
+.block{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    background: #ff0000;
+    margin: 10px;
+}
+
+.block-all{
+    display: flex;
+}
